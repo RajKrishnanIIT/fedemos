@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Demo</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .demo-section { background: #e8f5e9; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 600px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h2 { color: #43a047; }
+        .output { background: #c8e6c9; padding: 10px; border-radius: 4px; margin-top: 10px; }
+    </style>
+    <script>
+        function showOutput() {
+            let name = "Alice";
+            const age = 20;
+            var isStudent = true;
+            let x = 5, y = 3;
+            let result = `Name: ${name}, Age: ${age}, Student: ${isStudent}<br>`;
+            result += `Sum: ${x + y}<br>`;
+            result += `Greet: Hello, ${name}!<br>`;
+            document.getElementById('js-output').innerHTML = result;
+        }
+    </script>
+</head>
+<body onload="showOutput()">
+    <header>
+        <h1>JavaScript Fundamentals Demo</h1>
+    </header>
+    <main>
+        <section class="demo-section">
+            <h2>JavaScript Output</h2>
+            <div id="js-output" class="output"></div>
+        </section>
+        <section class="demo-section">
+            <h2>Function Example</h2>
+            <pre><code>function greet(name) {
+  return `Hello, ${name}!`;
+}
+</code></pre>
+        </section>
+    </main>
+    <footer>
+        <p><a href="../lessons/lesson9.html">Back to Lesson 9</a></p>
+    </footer>
+</body>
+</html>

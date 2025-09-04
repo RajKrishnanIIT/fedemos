@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7: Layout and Positioning</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+    <h1>Lesson 7: Layout and Positioning</h1>
+    <nav>
+      <ul class="lesson-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="lesson2.html">Semantic HTML</a></li>
+        <li><a href="lesson3.html">HTML Syntax & Structure</a></li>
+        <li><a href="lesson4.html">Links, Lists, and Media</a></li>
+        <li><a href="lesson5.html">Tables and Forms</a></li>
+        <li><a href="lesson6.html">CSS Styling Fundamentals</a></li>
+        <li><a href="lesson7.html">Layout and Positioning</a></li>
+        <li><a href="lesson8.html">Advanced CSS & Responsive</a></li>
+        <li><a href="lesson9.html">JavaScript Fundamentals</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Learning Objectives</h2>
+            <ul>
+                <li>Create page layouts using various CSS techniques</li>
+                <li>Understand positioning and how elements flow</li>
+                <li>Build responsive designs with flexbox basics</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Lesson 5.1: CSS Layout Fundamentals</h2>
+            <ul>
+                <li>Normal document flow</li>
+                <li>Float and clear (legacy but important to understand)</li>
+                <li>Position property: static, relative, absolute, fixed</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>.box {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #1976d2;
+  margin: 10px;
+}
+.clearfix {
+  clear: both;
+}
+.relative {
+  position: relative;
+  left: 20px;
+}
+.absolute {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 5.2: Flexbox Layout</h2>
+            <ul>
+                <li>Flex containers and flex items</li>
+                <li>Main axis and cross axis</li>
+                <li>Flex properties: justify-content, align-items, flex-wrap</li>
+                <li>Common flexbox patterns</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-item {
+  flex: 1 1 200px;
+  margin: 10px;
+  background: #90caf9;
+}
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 5.3: CSS Grid Basics</h2>
+            <ul>
+                <li>Grid containers and grid items</li>
+                <li>Grid template columns and rows</li>
+                <li>Grid areas and positioning</li>
+                <li>When to use Grid vs. Flexbox</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+}
+.grid-item {
+  background: #e3f2fd;
+  padding: 20px;
+}
+</code></pre>
+        </section>
+      <section>
+        <h2>Demo</h2>
+        <a href="../demos/demo7.html">View Demo: Layout and Positioning</a>
+      </section>
+        <button onclick="window.location.href='../index.html'">Back to Home</button>
+        <button onclick="window.location.href='lesson8.html'">Next: Responsive Design Basics</button>
+
+    </main>
+    <footer>
+        <p>Learn more about CSS layout: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout" target="_blank" rel="noopener">MDN: CSS Layout</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank" rel="noopener">MDN: CSS Grid</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout" target="_blank" rel="noopener">MDN: Flexbox</a></p>
+    </footer>
+</body>
+</html>

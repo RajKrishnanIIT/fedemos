@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 9: JavaScript Fundamentals</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Lesson 9: JavaScript Fundamentals</h1>
+        <nav>
+            <ul class="lesson-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="lesson2.html">Semantic HTML</a></li>
+                <li><a href="lesson3.html">HTML Syntax & Structure</a></li>
+                <li><a href="lesson4.html">Links, Lists, and Media</a></li>
+                <li><a href="lesson5.html">Tables and Forms</a></li>
+                <li><a href="lesson6.html">CSS Styling Fundamentals</a></li>
+                <li><a href="lesson7.html">Layout and Positioning</a></li>
+                <li><a href="lesson8.html">Advanced CSS & Responsive</a></li>
+                <li><a href="lesson9.html">JavaScript Fundamentals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Learning Objectives</h2>
+            <ul>
+                <li>Understand JavaScript syntax and basic programming concepts</li>
+                <li>Work with variables, data types, and operators</li>
+                <li>Create and call functions</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Lesson 7.1: JavaScript Introduction</h2>
+            <ul>
+                <li>What is JavaScript and its role in web development</li>
+                <li>JavaScript syntax and statements</li>
+                <li>Adding JavaScript to HTML (script tags, external files)</li>
+                <li>Browser developer tools and console</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>&lt;script&gt;
+  console.log('Hello, JavaScript!');
+&lt;/script&gt;
+// External file: &lt;script src="app.js"&gt;&lt;/script&gt;
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 7.2: Variables and Data Types</h2>
+            <ul>
+                <li>Declaring variables (<code>let</code>, <code>const</code>, <code>var</code>)</li>
+                <li>Primitive data types: string, number, boolean, null, undefined</li>
+                <li>Type coercion and checking types</li>
+                <li>Template literals and string methods</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>let name = "Alice";
+const age = 20;
+var isStudent = true;
+console.log(typeof name); // "string"
+console.log(`Hello, ${name}!`); // Template literal
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 7.3: Operators and Expressions</h2>
+            <ul>
+                <li>Arithmetic operators (+, -, *, /, %, **)</li>
+                <li>Comparison operators (===, !==, &lt;, &gt;, &lt;=, &gt;=)</li>
+                <li>Logical operators (&&, ||, !)</li>
+                <li>Assignment operators</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>let x = 5, y = 3;
+console.log(x + y); // 8
+console.log(x > y); // true
+console.log(x === 5 && y === 3); // true
+x += 2; // x is now 7
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 7.4: Functions</h2>
+            <ul>
+                <li>Function declarations vs. expressions</li>
+                <li>Parameters and arguments</li>
+                <li>Return statements</li>
+                <li>Arrow functions (ES6)</li>
+                <li>Scope and variable accessibility</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>// Function declaration
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+// Function expression
+const add = function(a, b) {
+  return a + b;
+};
+// Arrow function
+const multiply = (a, b) => a * b;
+console.log(greet('Bob'));
+console.log(add(2, 3));
+console.log(multiply(4, 5));
+</code></pre>
+        </section>
+            <section>
+                <h2>Demo</h2>
+                <a href="../demos/demo9.html">View Demo: JavaScript Fundamentals</a>
+            </section>
+        <button onclick="window.location.href='../index.html'">Back to Home</button>
+    </main>
+    <footer>
+        <p>Learn more about JavaScript: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript" target="_blank" rel="noopener">MDN: JavaScript Guide</a></p>
+    </footer>
+</body>
+</html>

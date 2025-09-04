@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Fundamentals Demo</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .demo-section { background: #fce4ec; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 600px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h2 { color: #d81b60; }
+        .box { width: 200px; padding: 20px; border: 2px solid #1976d2; margin: 10px; box-sizing: border-box; display: block; background: #fff; }
+        .button { background: #1976d2; color: #fff; border: none; padding: 0.75rem 1.5rem; border-radius: 4px; cursor: pointer; font-size: 1rem; }
+        .button:hover { background: #1565c0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Styling Fundamentals Demo</h1>
+    </header>
+    <main>
+        <section class="demo-section">
+            <h2>Selectors</h2>
+            <h3 class="button">Class Selector Example</h3>
+            <div id="main" class="box">ID Selector Example</div>
+        </section>
+        <section class="demo-section">
+            <h2>Box Model</h2>
+            <div class="box">This box uses padding, border, and margin.</div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="../lessons/lesson6.html">Back to Lesson 6</a></p>
+    </footer>
+</body>
+</html>

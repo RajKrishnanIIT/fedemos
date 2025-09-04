@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout and Positioning Demo</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .demo-section { background: #ede7f6; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 600px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h2 { color: #512da8; }
+        .flex-container { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .flex-item { flex: 1 1 100px; background: #b39ddb; padding: 20px; border-radius: 4px; }
+        .grid-container { display: grid; grid-template-columns: 1fr 2fr; grid-template-rows: 100px 100px; gap: 10px; }
+        .grid-item { background: #d1c4e9; padding: 20px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Layout and Positioning Demo</h1>
+    </header>
+    <main>
+        <section class="demo-section">
+            <h2>Flexbox Layout</h2>
+            <div class="flex-container">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+        </section>
+        <section class="demo-section">
+            <h2>Grid Layout</h2>
+            <div class="grid-container">
+                <div class="grid-item">A</div>
+                <div class="grid-item">B</div>
+                <div class="grid-item">C</div>
+                <div class="grid-item">D</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="../lessons/lesson7.html">Back to Lesson 7</a></p>
+    </footer>
+</body>
+</html>

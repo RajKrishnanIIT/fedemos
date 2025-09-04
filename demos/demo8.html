@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS and Responsive Design Demo</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+    .demo-section { background: #fff3e0; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 600px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h2 { color: #f57c00; }
+    .box { animation: fadeIn 1s ease-in; background: #ffe0b2; padding: 20px; border-radius: 8px; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .responsive-img { max-width: 100%; height: auto; }
+    .hover-btn { transition: background 0.3s; }
+    .hover-btn:hover { background: #f57c00; }
+    .css-var-box { --main-color: #f57c00; background: var(--main-color); color: #fff; padding: 10px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Advanced CSS and Responsive Design Demo</h1>
+    </header>
+    <main>
+        <section class="demo-section">
+            <h2>Responsive Image</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Responsive Demo" class="responsive-img">
+        </section>
+        <section class="demo-section">
+            <h2>Animation & Transition</h2>
+            <button class="hover-btn">Hover Me</button>
+            <div class="box">Animated Box</div>
+        </section>
+        <section class="demo-section">
+            <h2>Custom Properties</h2>
+            <div class="css-var-box">Using CSS Variable</div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="../lessons/lesson8.html">Back to Lesson 8</a></p>
+    </footer>
+</body>
+</html>
