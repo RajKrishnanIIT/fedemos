@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Demo</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .demo-section { background: #fffde7; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 700px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h2 { color: #fbc02d; }
+        .output { background: #fff; padding: 1rem; border-radius: 4px; margin-top: 1rem; font-family: monospace; }
+        .highlight { background: #ffe082; }
+        .demo-btn { margin: 0.5rem 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="main-title">DOM Manipulation Demo</h1>
+    </header>
+    <main>
+        <section class="demo-section">
+            <h2>Selecting Elements</h2>
+            <button class="demo-btn" onclick="selectElements()">Select Elements</button>
+            <div id="select-output" class="output"></div>
+        </section>
+        <section class="demo-section">
+            <h2>Modifying Elements</h2>
+            <button class="demo-btn" onclick="modifyElements()">Modify Elements</button>
+            <div id="modify-output" class="output"></div>
+        </section>
+        <section class="demo-section">
+            <h2>Event Handling</h2>
+            <button class="demo-btn" id="event-btn">Click Me</button>
+            <div id="event-output" class="output"></div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="../lessons/lesson11.html">Back to Lesson 11</a></p>
+    </footer>
+    <script>
+        function selectElements() {
+            const title = document.getElementById('main-title');
+            const btn = document.querySelector('.demo-btn');
+            const allBtns = document.querySelectorAll('.demo-btn');
+            let output = 'Title text: ' + title.textContent + '\n';
+            output += 'First button text: ' + btn.textContent + '\n';
+            output += 'Total demo buttons: ' + allBtns.length;
+            document.getElementById('select-output').textContent = output;
+        }
+        function modifyElements() {
+            const title = document.getElementById('main-title');
+            title.innerHTML = 'Title Changed!';
+            title.classList.add('highlight');
+            setTimeout(() => {
+                title.classList.remove('highlight');
+                title.innerHTML = 'DOM Manipulation Demo';
+            }, 1500);
+            const output = 'Title changed and highlight class added/removed.';
+            document.getElementById('modify-output').textContent = output;
+        }
+        document.getElementById('event-btn').addEventListener('click', function(event) {
+            document.getElementById('event-output').textContent = 'Button clicked! Event type: ' + event.type;
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

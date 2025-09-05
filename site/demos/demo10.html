@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Flow & Data Structures Demo</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .demo-section { background: #e3f2fd; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 700px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h2 { color: #1976d2; }
+        .output { background: #fff; padding: 1rem; border-radius: 4px; margin-top: 1rem; font-family: monospace; }
+        button { margin: 0.5rem 0; }
+    </style>
+    <script>
+        function showConditionals() {
+            let age = 18;
+            let result = '';
+            if (age >= 18) {
+                result += 'Adult\n';
+            } else {
+                result += 'Minor\n';
+            }
+            let color = 'red';
+            switch (color) {
+                case 'red': result += 'Color is red\n'; break;
+                case 'blue': result += 'Color is blue\n'; break;
+                default: result += 'Unknown color\n';
+            }
+            let isMember = true;
+            let fee = isMember ? '$5' : '$10';
+            result += 'Fee: ' + fee + '\n';
+            document.getElementById('cond-output').textContent = result;
+        }
+        function showLoops() {
+            let arr = [1,2,3];
+            let result = '';
+            for (let i = 0; i < 3; i++) { result += i + ' '; }
+            result += '\n';
+            for (const num of arr) { result += num + ' '; }
+            result += '\n';
+            let count = 0;
+            while (count < 2) { result += count + ' '; count++; }
+            result += '\n';
+            do { result += count + ' '; count--; } while (count > 0);
+            document.getElementById('loop-output').textContent = result;
+        }
+        function showArrays() {
+            let fruits = ['apple', 'banana'];
+            fruits.push('orange');
+            fruits.pop();
+            fruits.unshift('grape');
+            fruits.shift();
+            let result = fruits.join(', ') + '\n';
+            result += 'Lengths: ' + fruits.map(f => f.length).join(', ') + '\n';
+            result += 'Filtered: ' + fruits.filter(f => f.startsWith('a')).join(', ') + '\n';
+            result += 'Found: ' + (fruits.find(f => f === 'banana') || 'none') + '\n';
+            let matrix = [[1,2],[3,4]];
+            result += 'Matrix[0][1]: ' + matrix[0][1];
+            document.getElementById('array-output').textContent = result;
+        }
+        function showObjects() {
+            let person = {
+                name: 'Alice',
+                greet: function() { return 'Hello, ' + this.name; }
+            };
+            let result = person.greet() + '\n';
+            function Car(make) { this.make = make; }
+            Car.prototype.honk = function() { return 'Beep!'; };
+            let myCar = new Car('Toyota');
+            result += myCar.honk() + '\n';
+            let json = JSON.stringify(person);
+            result += 'JSON: ' + json;
+            document.getElementById('obj-output').textContent = result;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Control Flow & Data Structures Demo</h1>
+    </header>
+    <main>
+        <section class="demo-section">
+            <h2>Conditional Statements</h2>
+            <button onclick="showConditionals()">Run Demo</button>
+            <div id="cond-output" class="output"></div>
+        </section>
+        <section class="demo-section">
+            <h2>Loops</h2>
+            <button onclick="showLoops()">Run Demo</button>
+            <div id="loop-output" class="output"></div>
+        </section>
+        <section class="demo-section">
+            <h2>Arrays</h2>
+            <button onclick="showArrays()">Run Demo</button>
+            <div id="array-output" class="output"></div>
+        </section>
+        <section class="demo-section">
+            <h2>Objects</h2>
+            <button onclick="showObjects()">Run Demo</button>
+            <div id="obj-output" class="output"></div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="../lessons/lesson10.html">Back to Lesson 10</a></p>
+    </footer>
+</body>
+</html>

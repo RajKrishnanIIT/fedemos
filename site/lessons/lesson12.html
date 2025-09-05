@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 12: Advanced JavaScript and Integration</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Lesson 12: Advanced JavaScript and Integration</h1>
+        <nav>
+            <ul class="lesson-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="lesson2.html">Semantic HTML</a></li>
+                <li><a href="lesson3.html">HTML Syntax & Structure</a></li>
+                <li><a href="lesson4.html">Links, Lists, and Media</a></li>
+                <li><a href="lesson5.html">Tables and Forms</a></li>
+                <li><a href="lesson6.html">CSS Styling Fundamentals</a></li>
+                <li><a href="lesson7.html">Layout and Positioning</a></li>
+                <li><a href="lesson8.html">Advanced CSS & Responsive</a></li>
+                <li><a href="lesson9.html">JavaScript Fundamentals</a></li>
+                <li><a href="lesson10.html">Control Flow & Data Structures</a></li>
+                <li><a href="lesson11.html">DOM Manipulation</a></li>
+                <li><a href="lesson12.html">Advanced JS & Integration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Learning Objectives</h2>
+            <ul>
+                <li>Handle forms and user input validation</li>
+                <li>Work with timers and asynchronous concepts</li>
+                <li>Build complete interactive web applications</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Lesson 10.1: Form Handling and Validation</h2>
+            <ul>
+                <li>Accessing form data</li>
+                <li>Client-side validation</li>
+                <li>Regular expressions for pattern matching</li>
+                <li>Displaying error messages dynamically</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = form.elements['email'].value;
+  const pattern = /^[^@]+@[^@]+\.[^@]+$/;
+  if (!pattern.test(email)) {
+    // Show error message
+    alert('Invalid email!');
+  } else {
+    // Submit form
+    alert('Form submitted!');
+  }
+});
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 10.2: Timers and Basic Async Concepts</h2>
+            <ul>
+                <li>setTimeout and setInterval</li>
+                <li>Introduction to asynchronous programming</li>
+                <li>Basic fetch API usage (optional, for advanced students)</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>setTimeout(() => {
+  console.log('This runs after 1 second');
+}, 1000);
+
+let count = 0;
+const interval = setInterval(() => {
+  count++;
+  console.log(count);
+  if (count === 5) clearInterval(interval);
+}, 500);
+
+// Basic fetch usage
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(data => console.log(data));
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 10.3: Project Integration</h2>
+            <ul>
+                <li>Combining HTML structure, CSS styling, and JavaScript interaction</li>
+                <li>Code organization and best practices</li>
+                <li>Debugging techniques and error handling</li>
+                <li>Performance considerations</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>// Organize code in functions and modules
+function validateForm() { /* ... */ }
+function handleSubmit() { /* ... */ }
+// Use browser dev tools for debugging
+try {
+  // Some code
+} catch (error) {
+  console.error(error);
+}
+</code></pre>
+        </section>
+        <section>
+            <h2>Demo</h2>
+            <a href="../demos/demo12.html">View Demo: Advanced JS & Integration</a>
+        </section>
+        <button onclick="window.location.href='../index.html'">Back to Home</button>
+    </main>
+    <footer>
+        <p>Learn more: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions" target="_blank" rel="noopener">MDN: Regular Expressions</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank" rel="noopener">MDN: Fetch API</a></p>
+    </footer>
+</body>
+</html>
