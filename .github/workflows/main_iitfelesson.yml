@@ -15,10 +15,6 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # Copy files from 'site' to repo root for deployment
-      - name: Copy site files to root
-        run: |
-          cp -r site/* .
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
