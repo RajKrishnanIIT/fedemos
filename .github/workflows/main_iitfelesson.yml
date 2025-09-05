@@ -15,12 +15,15 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # No build step needed for plain HTML/CSS/JS
+      # Copy files from 'site' to repo root for deployment
+      - name: Copy site files to root
+        run: |
+          cp -r site/* .
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'iitfelesson'
           slot-name: 'Production'
-          package: ./site
+          package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3A0AD92E7DAA483B9ACBBE4E3A584C5D }}
