@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics Demo</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .demo-section { background: #fce4ec; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 600px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h2 { color: #d81b60; }
+        .highlight { color: #fff; background: #d81b60; padding: 0.2em 0.5em; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Basics Demo</h1>
+    </header>
+    <main>
+        <section class="demo-section">
+            <h2>Inline CSS</h2>
+            <p style="color: #d81b60;">This text uses inline CSS for color.</p>
+        </section>
+        <section class="demo-section">
+            <h2>Internal CSS</h2>
+            <p class="highlight">This text uses a CSS class defined in a &lt;style&gt; block.</p>
+        </section>
+        <section class="demo-section">
+            <h2>External CSS</h2>
+            <p>External CSS is loaded from <code>/style.css</code> and applies to this page.</p>
+        </section>
+    </main>
+    <footer>
+        <p><a href="/lessons/lesson6.html">Back to Lesson 6</a></p>
+    </footer>
+</body>
+</html>

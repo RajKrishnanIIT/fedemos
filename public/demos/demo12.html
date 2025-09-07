@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events Demo</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .demo-section { background: #f9fbe7; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 600px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h2 { color: #cddc39; }
+        #event-output { font-weight: bold; color: #cddc39; margin-top: 1rem; }
+    </style>
+    <script>
+        function handleEvent() {
+            document.getElementById('event-output').textContent = 'Event triggered!';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Events Demo</h1>
+    </header>
+    <main>
+        <section class="demo-section">
+            <h2>Event Handling</h2>
+            <button onclick="handleEvent()">Trigger Event</button>
+            <div id="event-output"></div>
+        </section>
+        <section class="demo-section">
+            <h2>Event Listener Example</h2>
+            <pre><code>element.addEventListener('click', handleEvent)</code></pre>
+        </section>
+    </main>
+    <footer>
+        <p><a href="/lessons/lesson12.html">Back to Lesson 12</a></p>
+    </footer>
+</body>
+</html>

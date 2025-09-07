@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Demo</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .demo-section { background: #fff8e1; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 600px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h2 { color: #fbc02d; }
+        #dom-output { font-weight: bold; color: #fbc02d; margin-top: 1rem; }
+    </style>
+    <script>
+        function changeText() {
+            document.getElementById('dom-output').textContent = 'DOM Manipulated!';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>JavaScript DOM Demo</h1>
+    </header>
+    <main>
+        <section class="demo-section">
+            <h2>DOM Manipulation</h2>
+            <button onclick="changeText()">Change Text</button>
+            <div id="dom-output"></div>
+        </section>
+        <section class="demo-section">
+            <h2>Accessing Elements</h2>
+            <pre><code>document.getElementById('dom-output')</code></pre>
+        </section>
+    </main>
+    <footer>
+        <p><a href="/lessons/lesson11.html">Back to Lesson 11</a></p>
+    </footer>
+</body>
+</html>

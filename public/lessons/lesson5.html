@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5: Tables and Forms</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+    <h1>Lesson 5: Tables and Forms</h1>
+    <nav>
+      <ul class="lesson-nav">
+        <li><a href="/index.html">Home</a></li>
+  <li><a href="/lessons/lesson2.html">Semantic HTML</a></li>
+  <li><a href="/lessons/lesson3.html">HTML Syntax & Structure</a></li>
+  <li><a href="/lessons/lesson4.html">Links, Lists, and Media</a></li>
+  <li><a href="/lessons/lesson5.html">Tables and Forms</a></li>
+  <li><a href="/lessons/lesson6.html">CSS Styling Fundamentals</a></li>
+  <li><a href="/lessons/lesson7.html">Layout and Positioning</a></li>
+  <li><a href="/lessons/lesson8.html">Advanced CSS & Responsive</a></li>
+  <li><a href="/lessons/lesson9.html">JavaScript Fundamentals</a></li>
+  <li><a href="/lessons/lesson10.html">Control Flow & Data Structures</a></li>
+  <li><a href="/lessons/lesson11.html">DOM Manipulation</a></li>
+  <li><a href="/lessons/lesson12.html">Advanced JS & Integration</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Learning Objectives</h2>
+            <ul>
+                <li>Create accessible data tables</li>
+                <li>Build functional forms with various input types</li>
+                <li>Understand form validation and accessibility</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Lesson 3.1: HTML Tables</h2>
+            <ul>
+                <li>Table structure: <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code></li>
+                <li>Table cells: <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code> with <code>scope</code> attributes</li>
+                <li>Column and row spanning</li>
+                <li>Table accessibility considerations</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>&lt;table&gt;
+  &lt;caption&gt;Student Grades&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;Name&lt;/th&gt;
+      &lt;th scope="col"&gt;Grade&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alice&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bob&lt;/td&gt;
+      &lt;td&gt;B&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td colspan="2"&gt;End of Table&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 3.2: HTML Forms</h2>
+            <ul>
+                <li>Form element and form attributes</li>
+                <li>Input types: text, email, password, number, date</li>
+                <li>Select dropdowns and radio buttons/checkboxes</li>
+                <li>Textareas and form validation attributes</li>
+                <li>Labels and fieldsets for accessibility</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Contact Us&lt;/legend&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" name="message" required&gt;&lt;/textarea&gt;
+    &lt;button type="submit"&gt;Send&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre>
+        </section>
+          <section>
+              <h2>Demo</h2>
+              <a href="/demos/demo5.html">View Demo: Tables and Forms</a>
+          </section>
+        <button onclick="window.location.href='/index.html'">Back to Home</button>
+        <button onclick="window.location.href='/lessons/lesson6.html'">Next: CSS Basics</button>
+    </main>
+    <footer>
+        <p>Learn more about tables and forms: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank" rel="noopener">MDN: HTML Tables</a> | <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms" target="_blank" rel="noopener">MDN: HTML Forms</a></p>
+    </footer>
+</body>
+</html>

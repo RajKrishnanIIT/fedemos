@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Demo</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .demo-section { background: #f3e5f5; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 600px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h2 { color: #8e24aa; }
+        .flex-container { display: flex; gap: 1rem; }
+        .flex-item { background: #8e24aa; color: #fff; padding: 1rem; border-radius: 4px; flex: 1; text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Layout Demo</h1>
+    </header>
+    <main>
+        <section class="demo-section">
+            <h2>Flexbox Example</h2>
+            <div class="flex-container">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+        </section>
+        <section class="demo-section">
+            <h2>Grid Example</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                <div class="flex-item">Grid 1</div>
+                <div class="flex-item">Grid 2</div>
+                <div class="flex-item">Grid 3</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="/lessons/lesson9.html">Back to Lesson 9</a></p>
+    </footer>
+</body>
+</html>

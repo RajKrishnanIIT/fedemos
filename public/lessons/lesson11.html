@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 11: DOM Manipulation</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Lesson 11: DOM Manipulation</h1>
+        <nav>
+            <ul class="lesson-nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/lessons/lesson2.html">Semantic HTML</a></li>
+                <li><a href="/lessons/lesson3.html">HTML Syntax & Structure</a></li>
+                <li><a href="/lessons/lesson4.html">Links, Lists, and Media</a></li>
+                <li><a href="/lessons/lesson5.html">Tables and Forms</a></li>
+                <li><a href="/lessons/lesson6.html">CSS Styling Fundamentals</a></li>
+                <li><a href="/lessons/lesson7.html">Layout and Positioning</a></li>
+                <li><a href="/lessons/lesson8.html">Advanced CSS & Responsive</a></li>
+                <li><a href="/lessons/lesson9.html">JavaScript Fundamentals</a></li>
+                <li><a href="/lessons/lesson10.html">Control Flow & Data Structures</a></li>
+                <li><a href="/lessons/lesson11.html">DOM Manipulation</a></li>
+                <li><a href="/lessons/lesson12.html">Advanced JS & Integration</a></li>
+                <li><a href="/lessons/lesson11.html">DOM Manipulation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Learning Objectives</h2>
+            <ul>
+                <li>Select and manipulate HTML elements with JavaScript</li>
+                <li>Handle user events</li>
+                <li>Create dynamic web content</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Lesson 9.1: Introduction to the DOM</h2>
+            <ul>
+                <li>What is the DOM (Document Object Model)?</li>
+                <li>Selecting elements: <code>getElementById</code>, <code>querySelector</code>, <code>querySelectorAll</code></li>
+                <li>Element properties: <code>innerHTML</code>, <code>textContent</code>, <code>classList</code></li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>const title = document.getElementById('main-title');
+const firstButton = document.querySelector('button');
+const allItems = document.querySelectorAll('.item');
+console.log(title.textContent);
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 9.2: Modifying Elements</h2>
+            <ul>
+                <li>Changing content and attributes</li>
+                <li>Adding and removing CSS classes</li>
+                <li>Creating and removing elements</li>
+                <li>Modifying styles directly</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>title.innerHTML = 'New Title';
+title.classList.add('highlight');
+title.classList.remove('highlight');
+const newDiv = document.createElement('div');
+document.body.appendChild(newDiv);
+document.body.removeChild(newDiv);
+title.style.color = 'red';
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 9.3: Event Handling</h2>
+            <ul>
+                <li>Common events: click, submit, load, input</li>
+                <li><code>addEventListener</code> method</li>
+                <li>Event objects and event properties</li>
+                <li>Preventing default behavior</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>const btn = document.querySelector('button');
+btn.addEventListener('click', function(event) {
+  alert('Button clicked!');
+  event.preventDefault();
+  console.log(event.type);
+});
+</code></pre>
+        </section>
+        <section>
+            <h2>Demo</h2>
+            <a href="/demos/demo11.html">View Demo: DOM Manipulation</a>
+        </section>
+        <button onclick="window.location.href='/index.html'">Back to Home</button>
+    </main>
+    <footer>
+        <p>Learn more: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" target="_blank" rel="noopener">MDN: DOM</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element" target="_blank" rel="noopener">MDN: Element API</a></p>
+    </footer>
+</body>
+</html>

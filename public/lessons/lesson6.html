@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6: CSS Styling Fundamentals</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lesson 6: CSS Styling Fundamentals</h1>
+        <nav>
+            <ul class="lesson-nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/lessons/lesson2.html">Semantic HTML</a></li>
+                <li><a href="/lessons/lesson3.html">HTML Syntax & Structure</a></li>
+                <li><a href="/lessons/lesson4.html">Links, Lists, and Media</a></li>
+                <li><a href="/lessons/lesson5.html">Tables and Forms</a></li>
+                <li><a href="/lessons/lesson6.html">CSS Styling Fundamentals</a></li>
+                <li><a href="/lessons/lesson7.html">Layout and Positioning</a></li>
+                <li><a href="/lessons/lesson8.html">Advanced CSS & Responsive</a></li>
+                <li><a href="/lessons/lesson9.html">JavaScript Fundamentals</a></li>
+                <li><a href="/lessons/lesson10.html">Control Flow & Data Structures</a></li>
+                <li><a href="/lessons/lesson11.html">DOM Manipulation</a></li>
+                <li><a href="/lessons/lesson12.html">Advanced JS & Integration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Week 4: CSS Fundamentals</h2>
+            <ul>
+                <li>Understand CSS syntax and how it connects to HTML</li>
+                <li>Use different types of selectors effectively</li>
+                <li>Apply the box model concept</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Lesson 4.1: CSS Introduction and Syntax</h2>
+            <ul>
+                <li>What is CSS and why use it?</li>
+                <li>CSS syntax: selectors, properties, values</li>
+                <li>Three ways to add CSS: inline, internal, external</li>
+                <li>CSS comments and organization</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>/* External CSS file: style.css */
+body {
+  background: #f4f4f4;
+  color: #333;
+}
+/* Inline: <div style="color: red;">Text</div> */
+/* Internal: <style>h1 { color: blue; }</style> */
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 4.2: Selectors and Specificity</h2>
+            <ul>
+                <li>Element, class, and ID selectors</li>
+                <li>Descendant and child selectors</li>
+                <li>Pseudo-classes (<code>:hover</code>, <code>:focus</code>, <code>:nth-child</code>)</li>
+                <li>Specificity hierarchy and best practices</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>/* Element selector */
+h1 { color: green; }
+/* Class selector */
+.button { background: #1976d2; }
+/* ID selector */
+#main { padding: 2rem; }
+/* Descendant selector */
+nav ul li { list-style: none; }
+/* Pseudo-class */
+button:hover { background: #1565c0; }
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 4.3: The Box Model</h2>
+            <ul>
+                <li>Content, padding, border, margin</li>
+                <li>Box-sizing property</li>
+                <li>Display property basics (block, inline, inline-block)</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>.box {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid #1976d2;
+  margin: 10px;
+  box-sizing: border-box;
+  display: block;
+}
+</code></pre>
+        </section>
+            <section>
+                <h2>Demo</h2>
+                <a href="/demos/demo6.html">View Demo: CSS Styling Fundamentals</a>
+            </section>
+        <button onclick="window.location.href='/index.html'">Back to Home</button>
+        <button onclick="window.location.href='/lessons/lesson7.html'">Next: CSS Layout Techniques</button>
+    </main>
+    <footer>
+        <p>Learn more about CSS: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank"
+                rel="noopener">MDN: CSS Tutorials</a></p>
+    </footer>
+</body>
+
+</html>

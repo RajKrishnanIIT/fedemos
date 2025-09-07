@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics Demo</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .demo-section { background: #e0f2f1; padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 600px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h2 { color: #00796b; }
+        #output { font-weight: bold; color: #00796b; margin-top: 1rem; }
+    </style>
+    <script>
+        function showMessage() {
+            document.getElementById('output').textContent = 'Hello, JavaScript!';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Basics Demo</h1>
+    </header>
+    <main>
+        <section class="demo-section">
+            <h2>Click the Button</h2>
+            <button onclick="showMessage()">Show Message</button>
+            <div id="output"></div>
+        </section>
+        <section class="demo-section">
+            <h2>Script Tag Example</h2>
+            <pre><code>&lt;script&gt;
+  // JavaScript code here
+&lt;/script&gt;</code></pre>
+        </section>
+    </main>
+    <footer>
+        <p><a href="/lessons/lesson10.html">Back to Lesson 10</a></p>
+    </footer>
+</body>
+</html>

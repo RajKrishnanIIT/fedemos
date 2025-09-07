@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8: Advanced CSS and Responsive Design</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+    <h1>Lesson 8: Advanced CSS and Responsive Design</h1>
+    <nav>
+      <ul class="lesson-nav">
+        <li><a href="/index.html">Home</a></li>
+  <li><a href="/lessons/lesson2.html">Semantic HTML</a></li>
+  <li><a href="/lessons/lesson3.html">HTML Syntax & Structure</a></li>
+  <li><a href="/lessons/lesson4.html">Links, Lists, and Media</a></li>
+  <li><a href="/lessons/lesson5.html">Tables and Forms</a></li>
+  <li><a href="/lessons/lesson6.html">CSS Styling Fundamentals</a></li>
+  <li><a href="/lessons/lesson7.html">Layout and Positioning</a></li>
+  <li><a href="/lessons/lesson8.html">Advanced CSS & Responsive</a></li>
+  <li><a href="/lessons/lesson9.html">JavaScript Fundamentals</a></li>
+  <li><a href="/lessons/lesson10.html">Control Flow & Data Structures</a></li>
+  <li><a href="/lessons/lesson11.html">DOM Manipulation</a></li>
+  <li><a href="/lessons/lesson12.html">Advanced JS & Integration</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Learning Objectives</h2>
+            <ul>
+                <li>Create responsive designs using media queries</li>
+                <li>Apply CSS animations and transitions</li>
+                <li>Understand CSS custom properties (variables)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Lesson 6.1: Responsive Design</h2>
+            <ul>
+                <li>Mobile-first approach</li>
+                <li>Media queries and breakpoints</li>
+                <li>Responsive units (em, rem, %, vw, vh)</li>
+                <li>Responsive typography and images</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>body {
+  font-size: 1rem;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 6.2: CSS Animations and Transitions</h2>
+            <ul>
+                <li>Transition property for smooth changes</li>
+                <li>Transform property for 2D effects</li>
+                <li>Keyframe animations</li>
+                <li>Performance considerations</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>button {
+  transition: background 0.3s;
+}
+button:hover {
+  background: #1976d2;
+  transform: scale(1.05);
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.box {
+  animation: fadeIn 1s ease-in;
+}
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 6.3: CSS Custom Properties and Advanced Techniques</h2>
+            <ul>
+                <li>CSS variables (custom properties)</li>
+                <li>CSS pseudo-elements (::before, ::after)</li>
+                <li>Advanced selectors and combinators</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>:root {
+  --main-color: #1976d2;
+}
+.box {
+  background: var(--main-color);
+}
+.box::before {
+  content: "\2605 ";
+  color: gold;
+}
+.box:hover {
+  background: var(--main-color);
+}
+/* Advanced selector */
+nav > ul li:first-child {
+  font-weight: bold;
+}
+</code></pre>
+        </section>
+      <section>
+        <h2>Demo</h2>
+        <a href="/demos/demo8.html">View Demo: Advanced CSS & Responsive Design</a>
+      </section>
+        <button onclick="window.location.href='/index.html'">Back to Home</button>
+        <button onclick="window.location.href='/lessons/lesson9.html'">JavaScript Fundamentals</button>
+    </main>
+    <footer>
+        <p>Learn more about advanced CSS: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" rel="noopener">MDN: Responsive Design</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations" target="_blank" rel="noopener">MDN: CSS Animations</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/--*" target="_blank" rel="noopener">MDN: CSS Custom Properties</a></p>
+    </footer>
+</body>
+</html>

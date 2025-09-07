@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10: Control Flow and Data Structures</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Lesson 10: Control Flow and Data Structures</h1>
+        <nav>
+            <ul class="lesson-nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/lessons/lesson2.html">Semantic HTML</a></li>
+                <li><a href="/lessons/lesson3.html">HTML Syntax & Structure</a></li>
+                <li><a href="/lessons/lesson4.html">Links, Lists, and Media</a></li>
+                <li><a href="/lessons/lesson5.html">Tables and Forms</a></li>
+                <li><a href="/lessons/lesson6.html">CSS Styling Fundamentals</a></li>
+                <li><a href="/lessons/lesson7.html">Layout and Positioning</a></li>
+                <li><a href="/lessons/lesson8.html">Advanced CSS & Responsive</a></li>
+                <li><a href="/lessons/lesson9.html">JavaScript Fundamentals</a></li>
+                <li><a href="/lessons/lesson10.html">Control Flow & Data Structures</a></li>
+                <li><a href="/lessons/lesson11.html">DOM Manipulation</a></li>
+                <li><a href="/lessons/lesson12.html">Advanced JS & Integration</a></li>
+                <li><a href="/lessons/lesson10.html">Control Flow & Data Structures</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Learning Objectives</h2>
+            <ul>
+                <li>Use conditional statements and loops effectively</li>
+                <li>Work with arrays and objects</li>
+                <li>Understand iteration methods</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Lesson 8.1: Conditional Statements</h2>
+            <ul>
+                <li>if/else statements</li>
+                <li>Switch statements</li>
+                <li>Ternary operator</li>
+                <li>Truthy and falsy values</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>let age = 18;
+if (age >= 18) {
+  console.log('Adult');
+} else {
+  console.log('Minor');
+}
+
+let color = 'red';
+switch (color) {
+  case 'red':
+    console.log('Color is red');
+    break;
+  case 'blue':
+    console.log('Color is blue');
+    break;
+  default:
+    console.log('Unknown color');
+}
+
+let isMember = true;
+let fee = isMember ? '$5' : '$10';
+console.log(fee);
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 8.2: Loops</h2>
+            <ul>
+                <li>for loops (traditional and for...of)</li>
+                <li>while and do...while loops</li>
+                <li>Breaking and continuing loops</li>
+                <li>Nested loops</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+const arr = [1, 2, 3];
+for (const num of arr) {
+  console.log(num);
+}
+
+let count = 0;
+while (count < 3) {
+  console.log(count);
+  count++;
+}
+
+do {
+  console.log(count);
+  count--;
+} while (count > 0);
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 8.3: Arrays</h2>
+            <ul>
+                <li>Creating and accessing arrays</li>
+                <li>Array methods: push, pop, shift, unshift</li>
+                <li>Array iteration: forEach, map, filter, find</li>
+                <li>Multi-dimensional arrays</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>let fruits = ['apple', 'banana'];
+fruits.push('orange');
+fruits.pop();
+fruits.unshift('grape');
+fruits.shift();
+
+fruits.forEach(fruit => console.log(fruit));
+let lengths = fruits.map(fruit => fruit.length);
+let filtered = fruits.filter(fruit => fruit.startsWith('a'));
+let found = fruits.find(fruit => fruit === 'banana');
+
+let matrix = [[1,2],[3,4]];
+console.log(matrix[0][1]);
+</code></pre>
+        </section>
+        <section>
+            <h2>Lesson 8.4: Objects</h2>
+            <ul>
+                <li>Object literals and property access</li>
+                <li>Methods and the 'this' keyword</li>
+                <li>Object constructors and prototypes (basic introduction)</li>
+                <li>JSON format</li>
+            </ul>
+            <h3>Example</h3>
+            <pre><code>let person = {
+  name: 'Alice',
+  greet: function() {
+    return 'Hello, ' + this.name;
+  }
+};
+console.log(person.greet());
+
+function Car(make) {
+  this.make = make;
+}
+Car.prototype.honk = function() {
+  return 'Beep!';
+};
+let myCar = new Car('Toyota');
+console.log(myCar.honk());
+
+let json = JSON.stringify(person);
+console.log(json);
+</code></pre>
+        </section>
+        <section>
+            <h2>Demo</h2>
+            <a href="/demos/demo10.html">View Demo: Control Flow & Data Structures</a>
+        </section>
+        <button onclick="window.location.href='/index.html'">Back to Home</button>
+    </main>
+    <footer>
+        <p>Learn more: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling" target="_blank" rel="noopener">MDN: Control Flow</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects" target="_blank" rel="noopener">MDN: Working with Objects</a></p>
+    </footer>
+</body>
+</html>
